@@ -1,2 +1,2 @@
 # exercícios-beecrowd
-Minhas resoluções para os exercícios iniciantes do beecrowd
+Minhas resoluções para alguns exercícios do beecrowd
