@@ -6,3 +6,4 @@ for i in range(10):
         x[i] = 1
     print(f'X[{i}] = {x[i]}')
     
+    
