@@ -1,26 +1,22 @@
-a = int(input())
-b = int(input())
-c = int(input())
-d = int(input())
-e = int(input())
+pares = 0
+impares = 0
+positivos = 0
+negativos = 0
 
-lista = [a, b, c, d, e]
-
-totpar = 0
-totimpar = 0
-totpos = 0
-totneg = 0
-for c in lista:
-    if c % 2 == 0:
-        totpar += 1
+for i in range(5):
+    num = int(input())
+    
+    if num % 2 == 0:
+        pares += 1
     else:
-        totimpar += 1
-    if c > 0:
-        totpos += 1
-    elif c < 0:
-        totneg += 1
+        impares += 1
         
-print(f'{totpar} valor(es) par(es)')        
-print(f'{totimpar} valor(es) impar(es)')   
-print(f'{totpos} valor(es) positivo(s)')   
-print(f'{totneg} valor(es) negativo(s)')
+    if num > 0:
+        positivos += 1
+    elif num < 0:
+        negativos += 1
+
+print(f'{pares} valor(es) par(es)')
+print(f'{impares} valor(es) impar(es)')
+print(f'{positivos} valor(es) positivo(s)')
+print(f'{negativos} valor(es) negativo(s)')
