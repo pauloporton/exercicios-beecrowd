@@ -1,27 +1,27 @@
 n = int(input())
 
-totcobaias = 0
-totc = 0
-totr = 0
-tots = 0
-for _ in range(n):
+total = 0
+coelhos = 0
+ratos = 0
+sapos = 0
+
+for i in range(n):
     teste = input().split()
-    num = int(teste[0])
-    tipo = teste[1].upper()
+    quantia = int(teste[0])
+    tipo = teste[1]
     
-    totcobaias += num
-    
+    total += quantia    
     if tipo == 'C':
-        totc += num
+        coelhos += quantia
     elif tipo == 'R':
-        totr += num
-    elif tipo == 'S':  
-        tots += num
+        ratos += quantia
+    else:
+        sapos += quantia
         
-print(f'Total: {totcobaias} cobaias')
-print(f'Total de coelhos: {totc}')
-print(f'Total de ratos: {totr}')
-print(f'Total de sapos: {tots}')
-print(f'Percentual de coelhos: {(totc/totcobaias)*100:.2f} %')
-print(f'Percentual de ratos: {(totr/totcobaias)*100:.2f} %')
-print(f'Percentual de sapos: {(tots/totcobaias)*100:.2f} %')
+print(f'Total: {total} cobaias')
+print(f'Total de coelhos: {coelhos}')
+print(f'Total de ratos: {ratos}')
+print(f'Total de sapos: {sapos}')
+print(f'Percentual de coelhos: {coelhos * 100 / total:.2f} %')
+print(f'Percentual de ratos: {ratos * 100 / total:.2f} %')
+print(f'Percentual de sapos: {sapos * 100 / total:.2f} %')

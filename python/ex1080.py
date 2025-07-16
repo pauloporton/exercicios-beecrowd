@@ -1,12 +1,12 @@
-for num in range(100):
-    n = int(input())
-    if num == 0:
-        maior = n
-        posmaior = num
+for i in range(100):
+    num = int(input())
+    
+    if i == 0:
+        maior = num
     else:
-        if n > maior:
-            maior = n
-            posmaior = num
-
+        if num > maior:
+            maior = num
+            pos = i + 1
+            
 print(maior)
-print(posmaior + 1)
+print(pos)
